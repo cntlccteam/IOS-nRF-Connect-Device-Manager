@@ -211,6 +211,8 @@ class ScannerViewController: UITableViewController, CBCentralManagerDelegate, UI
         }
     }
     
+    public let MESH_PROVS_SERVICE = CBUUID(string: "00001827-0000-1000-8000-00805f9b34fb")
+    public let MESH_PROXY_SERVICE = CBUUID(string: "00001828-0000-1000-8000-00805f9b34fb")
     /// Returns true if the discovered peripheral matches
     /// current filter settings.
     ///
@@ -218,7 +220,11 @@ class ScannerViewController: UITableViewController, CBCentralManagerDelegate, UI
     /// - returns: True, if the peripheral matches the filter,
     ///   false otherwise.
     private func matchesFilters(_ discoveredPeripheral: DiscoveredPeripheral) -> Bool {
-        if filterByUuid && discoveredPeripheral.advertisedServices?.contains(McuMgrBleTransport.SMP_SERVICE) != true {
+        if filterByUuid &&
+            (discoveredPeripheral.advertisedServices?.contains(McuMgrBleTransport.SMP_SERVICE) != true) &&
+            (discoveredPeripheral.advertisedServices?.contains(MESH_PROVS_SERVICE) != true) &&
+            (discoveredPeripheral.advertisedServices?.contains(MESH_PROXY_SERVICE) != true)
+        {
             return false
         }
         if filterByRssi && discoveredPeripheral.highestRSSI.decimalValue < -50 {
