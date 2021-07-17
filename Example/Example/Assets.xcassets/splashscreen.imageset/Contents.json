@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "osramsplash@2x-6.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -11,6 +12,7 @@
           "value" : "light"
         }
       ],
+      "filename" : "osramsplash@2x-7.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -21,11 +23,12 @@
           "value" : "dark"
         }
       ],
+      "filename" : "osramsplash@2x-8.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "splashscreen@2x.png",
+      "filename" : "osramsplash@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -36,7 +39,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "splashscreen@2x.png",
+      "filename" : "osramsplash@2x-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -47,12 +50,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "splashscreenDark@2x.png",
+      "filename" : "osramsplash@2x-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "splashscreen@3x.png",
+      "filename" : "osramsplash@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -63,7 +66,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "splashscreen@3x.png",
+      "filename" : "osramsplash@3x-1.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -74,8 +77,89 @@
           "value" : "dark"
         }
       ],
-      "filename" : "splashscreenDark@3x.png",
+      "filename" : "osramsplash@3x-2.png",
       "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "osramsplash@2x-9.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "filename" : "osramsplash@2x-10.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "osramsplash@2x-11.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "osramsplash@2x-3.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "filename" : "osramsplash@2x-4.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "osramsplash@2x-5.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "osramsplash@3x-3.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "filename" : "osramsplash@3x-4.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "osramsplash@3x-5.png",
+      "idiom" : "iphone",
       "scale" : "3x"
     }
   ],

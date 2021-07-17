@@ -19,7 +19,7 @@ class ScannerTableViewCell: UITableViewCell {
 
     public func setupViewWithPeripheral(_ aPeripheral: DiscoveredPeripheral) {
         peripheral = aPeripheral
-        peripheralName.text = aPeripheral.advertisedName
+        peripheralName.text = aPeripheral.advertisedName + " " + aPeripheral.bd_addr
 
         let rssi = aPeripheral.RSSI.decimalValue
         if rssi < -60 {
@@ -31,6 +31,10 @@ class ScannerTableViewCell: UITableViewCell {
         } else {
             peripheralRSSIIcon.image = #imageLiteral(resourceName: "rssi_1")
         }
+    }
+    
+    public func peripheralUpdatedName(_ aUpdatedPeripheralName: String) {
+        peripheralName.text = aUpdatedPeripheralName
     }
     
     public func peripheralUpdatedAdvertisementData(_ aPeripheral: DiscoveredPeripheral) {

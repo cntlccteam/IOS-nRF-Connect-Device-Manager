@@ -13,10 +13,12 @@ class DiscoveredPeripheral: NSObject {
     public private(set) var RSSI                : NSNumber = -127
     public private(set) var highestRSSI         : NSNumber = -127
     public private(set) var advertisedServices  : [CBUUID]?
-    
+    public var bd_addr : String
+
     init(_ aPeripheral: CBPeripheral) {
         basePeripheral = aPeripheral
         advertisedName = ""
+        bd_addr = ""
         super.init()
     }
     

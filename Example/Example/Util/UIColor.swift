@@ -8,11 +8,11 @@ import UIKit
 
 extension UIColor {
     
-    static let accent: UIColor = #colorLiteral(red: 0, green: 0.5483048558, blue: 0.8252354264, alpha: 1)
+    static let accent: UIColor = #colorLiteral(red: 1, green: 0.4, blue: 0, alpha: 1)
     
-    static let nordic: UIColor = #colorLiteral(red: 0, green: 0.7181802392, blue: 0.8448022008, alpha: 1)
+    static let nordic: UIColor = #colorLiteral(red: 1, green: 0.4, blue: 0, alpha: 1)
     
-    static let zephyr: UIColor = #colorLiteral(red: 0.231372549, green: 0.2431372549, blue: 0.3058823529, alpha: 1)
+    static let zephyr: UIColor = #colorLiteral(red: 0.3450980392, green: 0.3450980392, blue: 0.3529411765, alpha: 1)
     
     static var primary: UIColor {
         if #available(iOS 13.0, *) {

@@ -37,13 +37,13 @@
       "size" : "40x40"
     },
     {
-      "filename" : "Icon120.png",
+      "filename" : "HubSense120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "Icon180.png",
+      "filename" : "HubSense180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -103,7 +103,7 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "Icon1024.png",
+      "filename" : "HubSense1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

@@ -60,21 +60,22 @@ class FirmwareUpgradeViewController: UIViewController, McuMgrViewController {
     
     private func selectMode(for imageData: Data) {
         let alertController = UIAlertController(title: "Select mode", message: nil, preferredStyle: .actionSheet)
-        alertController.addAction(UIAlertAction(title: "Test and confirm", style: .default) {
-            action in
-            self.dfuManager!.mode = .testAndConfirm
-            self.startFirmwareUpgrade(imageData: imageData)
-        })
-        alertController.addAction(UIAlertAction(title: "Test only", style: .default) {
+//        alertController.addAction(UIAlertAction(title: "Test and confirm", style: .default) {
+//            action in
+//            self.dfuManager!.mode = .testAndConfirm
+//            self.startFirmwareUpgrade(imageData: imageData)
+//        })
+        alertController.addAction(UIAlertAction(title: "Press here to start image upgrade", style: .default) {
+//        alertController.addAction(UIAlertAction(title: "Test only", style: .default) {
             action in
             self.dfuManager!.mode = .testOnly
             self.startFirmwareUpgrade(imageData: imageData)
         })
-        alertController.addAction(UIAlertAction(title: "Confirm only", style: .default) {
-            action in
-            self.dfuManager!.mode = .confirmOnly
-            self.startFirmwareUpgrade(imageData: imageData)
-        })
+//        alertController.addAction(UIAlertAction(title: "Confirm only", style: .default) {
+//            action in
+//            self.dfuManager!.mode = .confirmOnly
+//            self.startFirmwareUpgrade(imageData: imageData)
+//        })
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
     
         // If the device is an ipad set the popover presentation controller
