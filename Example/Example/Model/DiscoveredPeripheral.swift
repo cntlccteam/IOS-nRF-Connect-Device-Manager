@@ -5,6 +5,7 @@
  */
 
 import CoreBluetooth
+import UIKit
 
 class DiscoveredPeripheral: NSObject {
     //MARK: - Properties
@@ -13,12 +14,24 @@ class DiscoveredPeripheral: NSObject {
     public private(set) var RSSI                : NSNumber = -127
     public private(set) var highestRSSI         : NSNumber = -127
     public private(set) var advertisedServices  : [CBUUID]?
+    public var enableEnOceanRadioBasedCommissioningButton : UIButton
     public var bd_addr : String
+    public var blinkingEnOceanRadioBasedCommissioningButton : Timer
+    public var enabledEnOceanRadioBasedCommissioning : Bool
+    public var commissionedEnOceanDevice : Bool
+    public var activatedAttentionButton : UIButton
+    public var blinkingAttentionButton : Timer
 
     init(_ aPeripheral: CBPeripheral) {
         basePeripheral = aPeripheral
         advertisedName = ""
         bd_addr = ""
+        enableEnOceanRadioBasedCommissioningButton = UIButton()
+        blinkingEnOceanRadioBasedCommissioningButton = Timer()
+        enabledEnOceanRadioBasedCommissioning = false
+        commissionedEnOceanDevice = false
+        activatedAttentionButton = UIButton()
+        blinkingAttentionButton = Timer()
         super.init()
     }
     

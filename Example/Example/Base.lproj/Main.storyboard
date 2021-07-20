@@ -217,45 +217,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="deviceItem" id="fwW-dh-uj8" userLabel="Device Item" customClass="ScannerTableViewCell" customModule="Device_Manager" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceItem" id="fwW-dh-uj8" userLabel="Device Item" customClass="ScannerTableViewCell" customModule="Device_Manager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="49.5" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" tableViewCell="fwW-dh-uj8" id="6bp-sO-eho">
-                                    <rect key="frame" x="0.0" y="0.0" width="349.5" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rssi_4" translatesAutoresizingMaskIntoConstraints="NO" id="Lao-ZO-8YE" userLabel="RSSI Icon">
                                             <rect key="frame" x="310" y="8" width="30" height="34"/>
-                                            <color key="tintColor" systemColor="systemBlueColor"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="38" id="TXE-XI-NBX"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&lt;Peripheral Name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lR8-aS-dEm">
-                                            <rect key="frame" x="45" y="15" width="118" height="21"/>
+                                            <rect key="frame" x="75" y="15" width="118" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnw-6r-guE">
-                                            <rect key="frame" x="6" y="13" width="26" height="22"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <inset key="imageEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <gestureRecognizers/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="3" minY="-2" maxX="0.0" maxY="0.0"/>
                                             <state key="normal" title="Attention Button">
-                                                <imageReference key="image" image="scope" catalog="system" symbolScale="large"/>
+                                                <imageReference key="image" image="light.max" catalog="system" symbolScale="large"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="medium"/>
                                             </state>
                                             <connections>
                                                 <action selector="aboutTappedAttentionButton:" destination="brr-jW-Ynb" eventType="touchDown" id="B5t-gw-LHF"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfc-eC-ktL" userLabel="EnableEnOceanRadioBasedCommissioning Button">
+                                            <rect key="frame" x="37" y="0.0" width="36" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <gestureRecognizers/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Button">
+                                                <imageReference key="image" image="bolt" catalog="system" symbolScale="medium"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="medium"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="aboutTappedEnableEnOceanRadioBasedCommissioningButton:" destination="brr-jW-Ynb" eventType="touchDown" id="XhM-bW-olc"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
                                     <constraints>
                                         <constraint firstItem="Lao-ZO-8YE" firstAttribute="top" secondItem="6bp-sO-eho" secondAttribute="top" constant="8" id="9CH-R1-EN1"/>
-                                        <constraint firstItem="lR8-aS-dEm" firstAttribute="leading" secondItem="6bp-sO-eho" secondAttribute="leading" constant="39" id="HLb-1T-4g6"/>
+                                        <constraint firstItem="lR8-aS-dEm" firstAttribute="leading" secondItem="6bp-sO-eho" secondAttribute="leading" constant="74" id="HLb-1T-4g6"/>
                                         <constraint firstAttribute="trailing" secondItem="Lao-ZO-8YE" secondAttribute="trailing" constant="8" id="cYT-ci-0tV"/>
                                         <constraint firstItem="lR8-aS-dEm" firstAttribute="centerY" secondItem="6bp-sO-eho" secondAttribute="centerY" id="deo-99-rOg"/>
                                         <constraint firstItem="Lao-ZO-8YE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lR8-aS-dEm" secondAttribute="trailing" constant="10" id="sd0-Cr-5Mf"/>
@@ -264,7 +282,10 @@
                                 </tableViewCellContentView>
                                 <viewLayoutGuide key="safeArea" id="hGV-SQ-uMI"/>
                                 <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <outlet property="peripheralAttentionButton" destination="qnw-6r-guE" id="ez6-gd-fvg"/>
+                                    <outlet property="peripheralEnOceanActivationButton" destination="mfc-eC-ktL" id="Wpi-lC-osT"/>
                                     <outlet property="peripheralName" destination="lR8-aS-dEm" id="sPt-9d-6Df"/>
                                     <outlet property="peripheralRSSIIcon" destination="Lao-ZO-8YE" id="hiF-OH-trC"/>
                                 </connections>
@@ -1889,13 +1910,14 @@
         <image name="baseline_get_app_black_24dp" width="24" height="24"/>
         <image name="baseline_open_in_new_black_18dp" width="18" height="18"/>
         <image name="baseline_poll_black_24dp" width="24" height="24"/>
+        <image name="bolt" catalog="system" width="101" height="128"/>
         <image name="device_manager" width="180" height="180"/>
         <image name="ic_bluetooth_searching_48pt" width="48" height="48"/>
         <image name="ic_download" width="30" height="30"/>
         <image name="ic_recents" width="30" height="30"/>
         <image name="ic_send" width="30" height="30"/>
+        <image name="light.max" catalog="system" width="128" height="72"/>
         <image name="rssi_4" width="128" height="128"/>
-        <image name="scope" catalog="system" width="128" height="122"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -1910,9 +1932,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

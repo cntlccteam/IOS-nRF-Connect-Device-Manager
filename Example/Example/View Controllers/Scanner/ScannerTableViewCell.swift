@@ -13,13 +13,16 @@ class ScannerTableViewCell: UITableViewCell {
     
     @IBOutlet weak var peripheralName: UILabel!
     @IBOutlet weak var peripheralRSSIIcon: UIImageView!
-
+    @IBOutlet weak var peripheralAttentionButton: UIButton!
+    @IBOutlet weak var peripheralEnOceanActivationButton: UIButton!
+    
     private var lastUpdateTimestamp = Date()
     private var peripheral: DiscoveredPeripheral!
 
     public func setupViewWithPeripheral(_ aPeripheral: DiscoveredPeripheral) {
         peripheral = aPeripheral
         peripheralName.text = aPeripheral.advertisedName + " " + aPeripheral.bd_addr
+        peripheralEnOceanActivationButton.tintColor = aPeripheral.enableEnOceanRadioBasedCommissioningButton.tintColor
 
         let rssi = aPeripheral.RSSI.decimalValue
         if rssi < -60 {
